@@ -68,6 +68,28 @@
     .main__parag--color {
       color: #1078ad; }
 
+.sympt {
+  margin-top: 10em;
+  width: 50%;
+  margin: 0 auto; }
+  .sympt h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1078ad; }
+  .sympt__flex {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .sympt__flex__items {
+      max-width: 50%;
+      margin-top: 20px; }
+    .sympt__flex h5 {
+      font-size: 1.2em;
+      text-align: center; }
+
 * {
   margin: 0px;
   padding: 0px;
