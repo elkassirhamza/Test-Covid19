@@ -54,3 +54,57 @@
 
     }
 }
+
+
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+    font-weight: bold;
+
+    &__img {
+        width: 46%;
+        height: 25em;
+    }
+
+    &__text {
+        padding-top: 2em;
+        font-size: 0.6em;
+
+
+        img {
+            width: 3.5em;
+            margin-left: 45%;
+        }
+
+
+    }
+
+    &__btn {
+        margin-top: 1em;
+        background-color: $btn_color;
+        padding: 0.4em 14em;
+        border-radius: 10px;
+        cursor: pointer;
+
+        a {
+            color: white;
+            font-size: 1.2em;
+
+        }
+
+    }
+
+    &__parag {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 2.3em;
+        color: $color2;
+
+        &--color {
+            color: $btn_color;
+        }
+    }
+}

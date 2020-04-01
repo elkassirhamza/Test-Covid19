@@ -1,2 +1,77 @@
 * {
-  margin: 0; }
+  list-style-type: none; }
+
+.header__nav {
+  padding: 0 2em;
+  background: url("../../../Design/Assets/png/Merged_bar-3@2x.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__menu a {
+  margin-right: 3rem;
+  color: black;
+  font-weight: bolder;
+  font-weight: 1.5rem; }
+  .header__menu a:nth-child(3) {
+    border: 1.5px solid black;
+    padding: 0.5em 1em;
+    border-radius: 10px; }
+    .header__menu a:nth-child(3):hover {
+      background-color: gold;
+      color: white; }
+
+.header__text {
+  background: url("../../../Design/Assets/png/En chiffres-24.png");
+  text-align: center;
+  line-height: 2.5; }
+
+.header__title {
+  font-weight: bolder;
+  font-size: 1.5em; }
+
+.header__parag {
+  width: 50%;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0 auto;
+  color: #1078ad; }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 3em;
+  font-weight: bold; }
+  .main__img {
+    width: 46%;
+    height: 25em; }
+  .main__text {
+    padding-top: 2em;
+    font-size: 0.6em; }
+    .main__text img {
+      width: 3.5em;
+      margin-left: 45%; }
+  .main__btn {
+    margin-top: 1em;
+    background-color: #1078ad;
+    padding: 0.4em 14em;
+    border-radius: 10px;
+    cursor: pointer; }
+    .main__btn a {
+      color: white;
+      font-size: 1.2em; }
+  .main__parag {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 2.3em;
+    color: #c7c7c7; }
+    .main__parag--color {
+      color: #1078ad; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif !important; }
