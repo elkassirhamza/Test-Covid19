@@ -1,4 +1,6 @@
 @import 'header.scss';
+@import 'proteger.scss';
+@import 'informations.scss';
 @import 'symptomes.scss';
 @import 'recom&test.scss';
 @import 'footer.scss';
@@ -12,6 +14,6 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Cairo',
-        sans-serif !important;
+        "sans-serif";
 
 }
