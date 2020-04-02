@@ -115,47 +115,53 @@
     font-size: large;
     font-weight: 700; }
 
-section .information {
+.info__information {
   display: flex;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: #96C5DC;
-  margin-top: 50px; }
+  margin-top: 50px;
+  height: 250px; }
   @media only screen and (max-width: 800px) {
-    section .information {
+    .info__information {
       flex-direction: column;
       justify-content: center; } }
-  section .information .information_1 {
+  .info__information__left {
     width: 35%;
-    text-align: center; }
+    text-align: center;
+    line-height: 2.5em; }
     @media only screen and (max-width: 800px) {
-      section .information .information_1 {
+      .info__information__left {
         width: 67%; } }
-    section .information .information_1 h1 {
-      font-size: 30px;
-      color: #0f6894; }
-    section .information .information_1 h3 {
-      color: #0f6894; }
-  section .information .information_2 {
-    width: 29%;
+    .info__information__left--title {
+      font-size: 32px;
+      color: #0f6894;
+      margin-bottom: 1.2em; }
+    .info__information__left--subt {
+      color: #0f6894;
+      font-size: 24px; }
+  .info__information__linkpara {
+    width: 30%;
     text-align: center; }
     @media only screen and (max-width: 800px) {
-      section .information .information_2 {
+      .info__information__linkpara {
         margin: 30px auto;
         width: 50%; } }
     @media only screen and (max-width: 545px) {
-      section .information .information_2 {
+      .info__information__linkpara {
         margin: 30px auto;
         width: 100%; } }
-    section .information .information_2 a {
+    .info__information__linkpara--link {
       text-decoration: none;
+      font-weight: 700;
       color: white;
       padding: 20px;
       border-radius: 8px;
       background-color: #0f6894; }
-    section .information .information_2 p {
+    .info__information__linkpara--para {
+      font-weight: 700;
       color: white;
       padding: 20px;
       width: 50%;
