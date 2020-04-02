@@ -126,8 +126,8 @@
   height: 250px; }
   @media only screen and (max-width: 800px) {
     .info__information {
-      flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      height: 510px; } }
   .info__information__left {
     width: 35%;
     text-align: center;
@@ -148,7 +148,7 @@
     @media only screen and (max-width: 800px) {
       .info__information__linkpara {
         margin: 30px auto;
-        width: 50%; } }
+        width: 40%; } }
     @media only screen and (max-width: 545px) {
       .info__information__linkpara {
         margin: 30px auto;
@@ -168,6 +168,9 @@
       border-radius: 8px;
       background-color: #0f6894;
       margin: auto; }
+      @media only screen and (max-width: 800px) {
+        .info__information__linkpara--para {
+          width: 60%; } }
 
 .sympt {
   margin-top: 10em;
@@ -190,6 +193,31 @@
     .sympt__flex h5 {
       font-size: 1.2em;
       text-align: center; }
+
+.transmet {
+  margin-top: 3em;
+  height: 300px; }
+  .transmet__title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 26px;
+    color: #1078ad; }
+  .transmet__cause {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2em; }
+    .transmet__cause__one, .transmet__cause__two {
+      max-width: 37%; }
+      .transmet__cause__one--pic1, .transmet__cause__one--pic2, .transmet__cause__two--pic1, .transmet__cause__two--pic2 {
+        width: 130px; }
+      .transmet__cause__one--subti, .transmet__cause__two--subti {
+        font-size: 19px;
+        font-weight: 700;
+        color: #2a2aa0; }
 
 .recommandation {
   background-color: #1078AD;

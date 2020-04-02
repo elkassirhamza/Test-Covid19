@@ -1,0 +1,46 @@
+.transmet {
+    margin-top: 3em;
+    height: 300px;
+
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 26px;
+        color: $btn_color;
+
+
+    }
+
+
+    &__cause {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 2em;
+
+
+
+        &__one,
+        &__two {
+            max-width: 37%;
+
+            &--pic1,
+            &--pic2 {
+                width: 130px;
+            }
+
+            &--subti {
+                font-size: 19px;
+                font-weight: 700;
+                color: rgb(42, 42, 160);
+
+            }
+        }
+
+
+
+    }
+}
