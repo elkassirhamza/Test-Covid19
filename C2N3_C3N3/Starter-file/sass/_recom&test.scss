@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------------------------
 
 .recommandation {
-    background-color: #1078AD;
+    background-color: $color1;
     padding-bottom: 30px;
 
 
@@ -38,17 +38,17 @@
         justify-content: center;
 
         h5 {
-            color: #F4CF1B;
+            color: $goldColor;
             font-size: 25px;
             font-weight: 700;
             margin-bottom: 25px;
         }
 
         span {
-            background-color: #F4CF1B;
+            background-color: $goldColor;
             width: 200px;
             text-align: center;
-            color: #1078AD;
+            color: $btn_color;
             font-size: 20px;
             font-weight: 700;
             margin-bottom: 15px;
@@ -60,7 +60,7 @@
         p {
             font-size: 23px;
             color: white;
-            border-bottom: 3px solid #F4CF1B;
+            border-bottom: 3px solid $goldColor;
         }
 
     }
@@ -111,12 +111,12 @@
     }
 
     &__btn {
-        background-color: #1078AD;
+        background-color: $color1;
         width: 30vw;
         font-size: 22px;
         font-weight: 700;
         color: white;
-        border: 2px solid #1078AD;
+        border: 2px solid $color1;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 10px;

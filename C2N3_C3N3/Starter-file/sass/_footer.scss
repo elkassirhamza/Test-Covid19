@@ -16,7 +16,7 @@
 
         &--middle {
             h2 {
-                color: #1078AD;
+                color: $btn_color;
                 font-weight: bolder;
                 font-size: 24px;
             }
@@ -60,18 +60,18 @@
             .footer__col11 {
                 padding: 5px 10px;
                 font-size: 16px;
-                border: 1px solid #1078AD;
+                border: 1px solid $btn_color;
                 border-radius: 10px;
                 font-weight: 600;
 
                 .fas {
-                    color: #F4CF1B;
+                    color: $goldColor;
                 }
             }
 
             .footer__col22 {
                 font-size: 20px;
-                color: #1078AD;
+                color: $btn_color;
                 font-weight: bolder;
             }
 

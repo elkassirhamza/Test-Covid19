@@ -11,6 +11,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+
+        img {
+            width: 4em;
+
+        }
     }
 
     &__menu {
@@ -19,6 +25,9 @@
             color: #1078AD;
             font-weight: bolder;
             font-weight: 1.5rem;
+            &:nth-child(2){
+                color: black;
+            }
 
             &:nth-child(3) {
                 border: 1.5px solid black;
@@ -26,10 +35,20 @@
                 border-radius: 10px;
 
                 &:hover {
-                    background-color: gold;
+                    background-color: $goldColor;
                     color: white;
+
+                    .fas {
+                        color: black;
+
+                    }
                 }
             }
+        }
+
+        .fas {
+            color: $goldColor;
+            font-size: 20px;
         }
     }
 

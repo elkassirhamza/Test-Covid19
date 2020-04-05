@@ -1,0 +1,33 @@
+.error {
+    width: 40%;
+    height: 600px;
+    padding-top: 5em;
+    margin: 0 auto;
+
+    &__img {
+        width: 500px;
+    }
+
+    &__msg {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 700;
+        color: $btn_color;
+        padding-top: 1em;
+    }
+
+    &__btn {
+        background: url("../../../Design/Assets/png/btn.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20em;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 2em;
+        margin-left: 1.5em;
+        cursor: pointer;
+    }
+}

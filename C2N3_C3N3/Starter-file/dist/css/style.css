@@ -8,19 +8,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .header__nav img {
+    width: 4em; }
 
 .header__menu a {
   margin-right: 3rem;
   color: #1078AD;
   font-weight: bolder;
   font-weight: 1.5rem; }
+  .header__menu a:nth-child(2) {
+    color: black; }
   .header__menu a:nth-child(3) {
     border: 1.5px solid black;
     padding: 0.5em 1em;
     border-radius: 10px; }
     .header__menu a:nth-child(3):hover {
-      background-color: gold;
+      background-color: #F4CF1B;
       color: white; }
+      .header__menu a:nth-child(3):hover .fas {
+        color: black; }
+
+.header__menu .fas {
+  color: #F4CF1B;
+  font-size: 20px; }
 
 .header__text {
   background: url("../../../Design/Assets/png/En chiffres-24.png");
@@ -68,6 +78,33 @@
     color: #c7c7c7; }
     .main__parag--color {
       color: #1078ad; }
+
+.error {
+  width: 40%;
+  height: 600px;
+  padding-top: 5em;
+  margin: 0 auto; }
+  .error__img {
+    width: 500px; }
+  .error__msg {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #1078ad;
+    padding-top: 1em; }
+  .error__btn {
+    background: url("../../../Design/Assets/png/btn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20em;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    cursor: pointer; }
 
 .protéger__title {
   padding-top: 50px;
@@ -220,7 +257,7 @@
         color: #2a2aa0; }
 
 .recommandation {
-  background-color: #1078AD;
+  background-color: #1078ad;
   padding-bottom: 30px; }
   .recommandation .container {
     max-width: 85%;
@@ -252,7 +289,7 @@
       background-color: #F4CF1B;
       width: 200px;
       text-align: center;
-      color: #1078AD;
+      color: #1078ad;
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 15px;
@@ -293,12 +330,12 @@
     margin-left: 45%;
     padding-top: 1em; }
   .test__btn {
-    background-color: #1078AD;
+    background-color: #1078ad;
     width: 30vw;
     font-size: 22px;
     font-weight: 700;
     color: white;
-    border: 2px solid #1078AD;
+    border: 2px solid #1078ad;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -320,7 +357,7 @@
     justify-content: space-around;
     margin-top: 2em; }
     .footer__contain--middle h2 {
-      color: #1078AD;
+      color: #1078ad;
       font-weight: bolder;
       font-size: 24px; }
     .footer__contain--middle h4 {
@@ -348,14 +385,14 @@
       .footer__contain .footer__col1 .footer__col11 {
         padding: 5px 10px;
         font-size: 16px;
-        border: 1px solid #1078AD;
+        border: 1px solid #1078ad;
         border-radius: 10px;
         font-weight: 600; }
         .footer__contain .footer__col1 .footer__col11 .fas {
           color: #F4CF1B; }
       .footer__contain .footer__col1 .footer__col22 {
         font-size: 20px;
-        color: #1078AD;
+        color: #1078ad;
         font-weight: bolder; }
       .footer__contain .footer__col1 .footer__col33 {
         font-weight: bold;
