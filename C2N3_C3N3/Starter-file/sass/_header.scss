@@ -25,7 +25,8 @@
             color: #1078AD;
             font-weight: bolder;
             font-weight: 1.5rem;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 color: black;
             }
 
@@ -71,6 +72,35 @@
         margin: 0 auto;
         color: $btn_color;
 
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header {
+        &__menu {
+            a {
+                margin-right: 0.5em;
+                font-size: 0.7em;
+
+                &:nth-child(3) {
+                    border: 1.5px solid black;
+                    padding: 0.5em 0.6em;
+                }
+
+                .fas {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 1em;
+        }
+
+        &__parag {
+            width: 70%;
+            font-size: 0.7em;
+        }
     }
 }
 
@@ -124,6 +154,40 @@
 
         &--color {
             color: $btn_color;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            width: 100%;
+            height: 12em;
+        }
+
+        &__parag {
+            font-size: 1.5em;
+
+            &--color {
+                font-size: 1.5em;
+            }
+        }
+
+        &__text {
+            img {
+                width: 2em;
+                margin-left: 43%;
+                padding: 0.2em;
+            }
+        }
+
+        &__btn {
+            padding: 0.2em 0.6em;
+            text-align: center;
         }
     }
 }

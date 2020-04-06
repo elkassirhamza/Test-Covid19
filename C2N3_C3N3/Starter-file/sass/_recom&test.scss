@@ -26,9 +26,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
-
     }
 
     &__appel {
@@ -87,6 +84,60 @@
     }
 }
 
+@media screen and (max-width:400px) {
+    .recommandation {
+        .container {
+            max-width: 100%;
+            margin-left: 2em;
+
+        }
+
+        h2 {
+            margin-right: 2em;
+            font-size: 1.2rem;
+        }
+
+        &__row {
+            max-width: 86%;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__list {
+            justify-content: center;
+
+            p {
+                font-size: 1em;
+            }
+
+            li {
+                font-size: 0.7em;
+                line-height: 20px;
+            }
+        }
+
+        &__appel {
+            margin-left: 1.5em;
+
+            h5 {
+                color: $goldColor;
+                font-size: 1.1em;
+            }
+
+            span {
+                width: 150px;
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+        }
+    }
+}
+
 // -----------------------------------------------------------------Test---------------------------------------------------------
 
 .test {
@@ -125,5 +176,23 @@
         margin-top: 1em;
         cursor: pointer;
 
+    }
+}
+
+@media screen and (max-width:400px) {
+    .test {
+        &__title {
+            font-size: 0.6em;
+        }
+
+        &__emotic {
+            max-width: 30px;
+        }
+
+        &__btn {
+            width: 16em;
+            font-size: 1em;
+            margin-left: 15%;
+        }
     }
 }

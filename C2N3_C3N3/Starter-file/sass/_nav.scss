@@ -30,31 +30,42 @@
                     color: white;
                 }
             }
+
+
+
+            .fas {
+                color: $goldColor;
+            }
         }
 
-        .fas {
-            color: $goldColor;
+        &__text {
+            background: url("../../../Design/Assets/png/En\ chiffres-24.png");
+            text-align: center;
+            line-height: 2.5;
+        }
+
+        &__title {
+            font-weight: bolder;
+            font-size: 1.5em;
+
+        }
+
+        &__parag {
+            width: 50%;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin: 0 auto;
+            color: $btn_color;
+
         }
     }
 
-    &__text {
-        background: url("../../../Design/Assets/png/En\ chiffres-24.png");
-        text-align: center;
-        line-height: 2.5;
-    }
-
-    &__title {
-        font-weight: bolder;
-        font-size: 1.5em;
-
-    }
-
-    &__parag {
-        width: 50%;
-        font-weight: bold;
-        font-size: 0.9em;
-        margin: 0 auto;
-        color: $btn_color;
-
-    }
-}
+    // @media screen and (max-width:400px) {
+    //     .header {
+    //         &__menu {
+    //             a {
+    //                 margin-right: 0.5em;
+    //             }
+    //         }
+    //     }
+    // }

@@ -4,6 +4,8 @@
     padding-top: 5em;
     margin: 0 auto;
 
+
+
     &__img {
         width: 500px;
     }
@@ -23,11 +25,16 @@
         width: 20em;
         font-size: 22px;
         font-weight: 700;
-        color: white;
         border-radius: 10px;
         text-align: center;
         margin-top: 2em;
         margin-left: 1.5em;
         cursor: pointer;
+
+        &--link {
+            color: white;
+        }
+
+
     }
 }
