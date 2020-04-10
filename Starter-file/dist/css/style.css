@@ -299,6 +299,21 @@
         font-weight: 700;
         color: #2a2aa0; }
 
+@media screen and (max-width: 400px) {
+  .transmet {
+    height: 250px; }
+    .transmet__cause {
+      justify-content: space-around;
+      width: 90%; }
+      .transmet__cause__one, .transmet__cause__two {
+        max-width: 55%; }
+        .transmet__cause__one--pic1, .transmet__cause__one--pic2, .transmet__cause__two--pic1, .transmet__cause__two--pic2 {
+          width: 90px; }
+        .transmet__cause__one--subti, .transmet__cause__two--subti {
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: #1A519E; } }
+
 .recommandation {
   background-color: #1078ad;
   padding-bottom: 30px; }
