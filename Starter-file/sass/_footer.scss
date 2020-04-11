@@ -74,6 +74,8 @@
                 font-size: 20px;
                 color: $btn_color;
                 font-weight: bolder;
+
+                
             }
 
             .footer__col33 {
@@ -82,13 +84,25 @@
                 font-size: 20px;
             }
 
+            a {
+                color: black;
+            }
         }
     }
+    #active {
+        color: $btn_color;
+    }
+
+}
+
+.band {
+    height: 15px;
+    background: $btn_color;
 }
 
 @media screen and (max-width:400px) {
     .footer {
-        height: 20em;
+        height: 25em;
 
         &__img {
             max-width: 4em;
@@ -132,7 +146,7 @@
                     font-size: 0.7em;
 
                     a {
-                        font-size: 3.5em;
+                        font-size: 0.7em;
                     }
 
                     .fas {
@@ -164,4 +178,5 @@
             }
         }
     }
+
 }

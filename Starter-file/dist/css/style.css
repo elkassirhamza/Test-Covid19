@@ -513,10 +513,18 @@
         font-weight: bold;
         font-size: 16px;
         font-size: 20px; }
+      .footer__contain .footer__col1 a {
+        color: black; }
+  .footer #active {
+    color: #1078ad; }
+
+.band {
+  height: 15px;
+  background: #1078ad; }
 
 @media screen and (max-width: 400px) {
   .footer {
-    height: 20em; }
+    height: 25em; }
     .footer__img {
       max-width: 4em;
       margin: 0 auto;
@@ -540,7 +548,7 @@
           padding: 2px 7px;
           font-size: 0.7em; }
           .footer__contain .footer__col1 .footer__col11 a {
-            font-size: 3.5em; }
+            font-size: 0.7em; }
           .footer__contain .footer__col1 .footer__col11 .fas {
             font-size: 10px; }
         .footer__contain .footer__col1 .footer__col22 {
