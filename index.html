@@ -74,26 +74,35 @@
     <main class="main">
         <img class="main__img" src="./Design/Assets/png/Group_80.png" alt="" title="">
         <div class="main__text">
-            <p class="main__parag main__parag--color"> Vous pensez avoir été exposé au <br> Coronavirus COVID-19 et avez
+            <p class="main__parag main__parag--color" data-fr> Vous pensez avoir été exposé au <br> Coronavirus COVID-19
+                et avez
                 des
                 symptômes ?</p>
+            <p class="main__parag main__parag--color" data-ar> واش كتضن انك تعرضت لفيروس كورونا المستجد <br> و عندك
+                الأعراض ديالها؟</p>
             <img src="./Design/Assets/png/1f637.png" alt="" title="">
-            <p class="main__parag">Je reste vigilant ? <br> Je programme une téléconsultation ? <br> J'appelle le 15 ?
+            <p class="main__parag" data-fr>Je reste vigilant ? <br> Je programme une téléconsultation ? <br> J'appelle
+                le 15 ?
                 <br>
                 Faites le test pour
                 répondre en citoyen <br> éclairé selon vos symptômes.
             </p>
+            <p class="main__parag" data-ar>نبقا راد لبال؟ <br> نستاشر عبر الهاتف مع الجهات المعنية؟ <br> نعيط ل 141؟
+                <br> دير الاختباروفقًا للأعراض ديالك باش ترتاح
+            </p>
             <div class="main__btn">
-                <a href="./Starter-file/dist/test.html">Demarer le test
+                <a href="./Starter-file/dist/test.html" data-fr>Demarer le test
+                </a>
+                <a href="./Starter-file/dist/test.html" data-ar>نبداو الاختبار
                 </a></div>
         </div>
+
     </main>
-
-
     <!-- -------------------------------------------------Symptômes----------------------------------------------------- -->
     <section class="sympt">
 
-        <h1>Quels sont les symptômes à surveiller ?</h1>
+        <h1 data-fr>Quels sont les symptômes à surveiller ?</h1>
+        <h1 data-ar>شنو هي الأعراض لواجب الانتباه ليها؟</h1>
 
         <div class="sympt__flex">
             <div>
@@ -101,13 +110,15 @@
                     <img id="img1" src="./Design/Assets/png/fievre.png" alt="" style="
                     margin:-40px 0px 0px 53px;
                 ">
-                    <h5 class="sympt__items__par">Fièvre</h5>
+                    <h5 class="sympt__items__par" data-fr>Fièvre</h5>
+                    <h5 class="sympt__items__par" data-ar>الحمى</h5>
                 </div>
 
 
                 <div class="sympt__items">
                     <img src="./Design/Assets/png/Calque -2.png" alt="">
-                    <h5 class="sympt__items__par">Gêne<br>respiratoire</h5>
+                    <h5 class="sympt__items__par" data-fr>Gêne<br>respiratoire</h5>
+                    <h5 class="sympt__items__par" data-ar>ضيق التنفسي</h5>
                 </div>
             </div>
 
@@ -115,13 +126,15 @@
             <div>
                 <div class="sympt__items">
                     <img src="./Design/Assets/png/Calque 2.png" alt="">
-                    <h5 class="sympt__items__par">Nausées <br>et vomissements</h5>
+                    <h5 class="sympt__items__par" data-fr>Nausées <br>et vomissements</h5>
+                    <h5 class="sympt__items__par" data-ar>غثيان و التقيؤ</h5>
                 </div>
 
 
                 <div class="sympt__items">
                     <img src="./Design/Assets/png/Calque -1.png" alt="">
-                    <h5 class="sympt__items__par">Toux et maux <br>de gorge</h5>
+                    <h5 class="sympt__items__par" data-fr>Toux et maux <br>de gorge</h5>
+                    <h5 class="sympt__items__par" data-ar>السعال و <br> التهاب الحلق</h5>
                 </div>
             </div>
         </div>
@@ -133,9 +146,9 @@
 
     <section class="recommandation">
 
-        <div class="container">
+        <div class="container" data-fr>
             <div>
-                <h2 class="recommandation__title">Recommandations officielles</h2>
+                <h2 class="recommandation__title" data-fr>Recommandations officielles</h2>
             </div>
             <div class="recommandation__row">
                 <div class="recommandation__list">
@@ -158,6 +171,31 @@
             </div>
         </div>
 
+        <!-- --------------------arab--------------------------------- -->
+        <div class="container" data-ar>
+            <div>
+                <h2 class="recommandation__title" data-ar>التوصيات الرسمية</h2>
+            </div>
+            <div class="recommandation__row">
+                <div class="recommandation__list">
+                    <p>إذا كنت كتضن انك مريض فمن الاحسن,</p>
+                    <ul>
+                        <li>تبعد من البلايص العمومية</li>
+                        <li>متزورجش ناس الضعفاء ) الناس الكبار او المرضى.</li>
+                        <li>بقا فدارك.</li>
+                        <li>التزم التعليمات لمفروضة : غسل يديك، ماسك.</li>
+                        <li>راقب أعراض ديالك والتغيرات في درجة حرارة في جسم ديالك.</li>
+                    </ul>
+                </div>
+
+                <div class="recommandation__appel">
+                    <h5>اتصل مجانًا</h5>
+                    <span>080 100 47 47</span>
+                    <p>www.sante.gov.ma</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- -----------------------------------------------------Recommandations--------------------------------------- -->
@@ -166,9 +204,12 @@
     <!-- ---------------------------------------------------------Test---------------------------------------------- -->
 
     <section class="test">
-        <h2 class="test__title">Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des symptômes ?</h2>
+        <h2 class="test__title" data-fr>Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des symptômes
+            ?</h2>
+        <h2 class="test__title" data-ar>واش كتضن انك تعرضت لفيروس كورونا المستجد و عندك الأعراض ديالها؟</h2>
         <img src="./Design/Assets/png/1f637.png" alt="" class="test__emotic">
-        <a href="./Starter-file/dist/test.html"><button class="test__btn"> Démarrer le test</button></a>
+        <a href="./Starter-file/dist/test.html"><button class="test__btn" data-fr> Démarrer le test</button></a>
+        <a href="./Starter-file/dist/test.html"><button class="test__btn" data-ar> نبداو الاختبار</button></a>
     </section>
 
     <!-- ---------------------------------------------------------Test---------------------------------------------- -->
@@ -184,8 +225,10 @@
                     <li class="footer__col11"><a href="./Starter-file/dist/error.html"> عربي &nbsp;&nbsp;<i
                                 class="fas fa-globe"></i> </a>
                     </li>
-                    <li class="footer__col22 "><a href="./index.html" id="active">Accueil</a></li>
-                    <li class="footer__col33"><a href="./Starter-file/dist/conseils.html">Conseil</a></li>
+                    <li class="footer__col22 "><a href="./index.html" id="active" data-fr>Accueil</a></li>
+                    <li class="footer__col22 "><a href="./index.html" id="active" data-ar> الرئيسية</a></li>
+                    <li class="footer__col33"><a href="./Starter-file/dist/conseils.html" data-fr>Conseil</a></li>
+                    <li class="footer__col33"><a href="./Starter-file/dist/conseils.html" data-ar>نصائح</a></li>
                 </ul>
             </div>
 
@@ -193,16 +236,19 @@
             <div class="footer__contain--middle">
                 <ul>
                     <li>
-                        <h2>Contacts utiles</h2>
+                        <h2 data-fr>Contacts utiles</h2>
+                        <h2 data-ar>اتصالات مفيدة</h2>
                     </li>
                     <li>
-                        <p>Chiffre économique "Alo épidémie vigilance"</p>
+                        <p data-fr>Chiffre économique "Alo épidémie vigilance"</p>
+                        <p data-ar>الرقم الاقتصادي "ألو اليقضة الوبائية"</p>
                     </li>
                     <li>
                         <h4>080 100 47 47</h4>
                     </li>
                     <li>
-                        <p>Aide médicale urgente</p>
+                        <p data-fr>Aide médicale urgente</p>
+                        <p data-ar>للمساعدة الطبية الاستعجالية</p>
                     </li>
                     <li>
                         <h4>141</h4>

@@ -616,32 +616,32 @@
     padding-top: 1em; }
   .test__emotic {
     max-width: 50px;
-    margin-left: 45%;
+    margin-left: 48%;
     padding-top: 1em; }
-  .test__btn {
-    background-color: #1078ad;
-    width: 30vw;
-    font-size: 22px;
-    font-weight: 700;
-    color: white;
-    border: 2px solid #1078ad;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 32%;
-    margin-top: 1em;
-    cursor: pointer; }
+  .test a {
+    margin: auto; }
+    .test a .test__btn {
+      background-color: #1078ad;
+      width: 30vw;
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      border: 2px solid #1078ad;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 1em;
+      cursor: pointer; }
 
 @media screen and (max-width: 400px) {
   .test__title {
     font-size: 0.6em; }
   .test__emotic {
     max-width: 30px; }
-  .test__btn {
+  .test a .test__btn {
     width: 16em;
-    font-size: 1em;
-    margin-left: 15%; } }
+    font-size: 1em; } }
 
 .footer {
   text-align: center;
