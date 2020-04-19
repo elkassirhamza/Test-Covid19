@@ -411,7 +411,7 @@
       margin-bottom: 1.2em; }
     .info__information__left--subt {
       color: #0f6894;
-      font-size: 24px; }
+      font-size: 20px; }
       @media only screen and (max-width: 545px) {
         .info__information__left--subt {
           font-size: 12px; } }
@@ -434,7 +434,7 @@
       border-radius: 8px;
       background-color: #0f6894; }
     .info__information__linkpara--para {
-      font-weight: 700;
+      font-weight: 600;
       color: white;
       padding: 20px;
       width: 50%;
