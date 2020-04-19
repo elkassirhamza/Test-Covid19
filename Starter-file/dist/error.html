@@ -15,16 +15,26 @@
 <body>
     <!-- ---------NAV-------- -->
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <img src="../../Design/Assets/png/logo__sante-48.png" alt=" " title="Ministère logo">
-            </div>
-            <div class="header__menu">
-                <a href="./conseils.html">Conseil</a>
-                <a href="../../index.html">Accueil</a>
-                <a href="./error.html">ﻋﺮﺑﻲ &nbsp;&nbsp;<i class="fas fa-globe"></i></a>
-            </div>
-        </nav>
+
+
+        <div class="header__menu">
+            <img src="./Design/Assets/png/logo__sante-48.png" alt=" " title="Ministère logo">
+            <nav data-fr>
+                <ul>
+                    <li><a href="./Starter-file/dist/conseils.html">conseil</a></li>
+                    <li><a href="../../../index.html">Accueil</a></li>
+                    <li><button class="arabic button1">عربي <i class="fas fa-globe"></i></button></li>
+                </ul>
+            </nav>
+            <nav data-ar>
+                <ul>
+                    <li><button class="arabic button1">FRN <i class="fas fa-globe"></i></button></li>
+                    <li><a href="Conseil.html">النصائح</a></li>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <!-- --------- END NAV-------- -->
 
@@ -86,6 +96,16 @@
         </div>
     </section>
     <!-- ---------END footer-------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $('.button1').click(function () {
+            var lang = $('html').attr('lang');
+            if (lang == 'fr') $('html').attr('lang', 'ar');
+            if (lang == 'ar') $('html').attr('lang', 'fr');
+
+        });
+    </script>
 
 </body>
 

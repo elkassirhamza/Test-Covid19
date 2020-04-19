@@ -2,3 +2,22 @@ $color1 : #1078ad;
 $color2 :#c7c7c7;
 $btn_color :#1078ad;
 $goldColor:#F4CF1B;
+$whiteColor:white;
+$blackColor:black;
+$sizeFont: 30px;
+
+@mixin flexBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin button {
+    padding: 0px 15px;
+    border: 1.5px solid rgba($color: $blackColor, $alpha: .4);
+    border-radius: 5px;
+
+    i {
+        color: $goldColor;
+        font-size: 20px;
+    }
+}

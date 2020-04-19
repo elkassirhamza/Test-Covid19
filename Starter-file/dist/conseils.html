@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,26 +14,48 @@
 
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <img src="../../Design/Assets/png/logo__sante-48.png" alt=" " title="Ministère logo">
-            </div>
-            <div class="header__menu">
-                <a href="#">Conseil</a>
-                <a href="../../index.html">Accueil</a>
-                <a href="./error.html">ﻋﺮﺑﻲ &nbsp;&nbsp;<i class="fas fa-globe"></i></a>
-            </div>
-        </nav>
-        <div class="header__text">
-            <h3 class="header__title">LA DERNIÈRE INFO MÉDICALE </h3>
-            <p class="header__parag">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur
-                d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. <br> N'arrêtez pas votre
-                traitement
-                !
-                Consultez
-                votre médecin ou votre pharmacien. </p>
+        
+
+        <div class="header__menu">
+            <img src="../../Design/Assets/png/logo__sante-48.png" alt=" " title="Ministère logo">
+            <nav data-fr>
+                <ul>
+                    <li><a href="#">conseil</a></li>
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><button class="arabic button1">عربي <i class="fas fa-globe"></i></button></li>
+                </ul>
+            </nav>
+            <nav data-ar>
+                <ul>
+                    <li><button class="arabic button1">FRN <i class="fas fa-globe"></i></button></li>
+                    <li><a href="#">النصائح</a></li>
+                    <li><a href="../../index.html">الرئيسية</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+        <!-- <div class="header__menu" data-fr>
+            <a href="./Starter-file/dist/conseils.html">Conseil</a>
+            <a href="#">Accueil</a>
+            <a href="#" class="button1">ﻋﺮﺑﻲ &nbsp;&nbsp;<i class="fas fa-globe"></i></a>
+        </div> -->
+
+        <!-- ----------------------- -->
+        <!-- <div class="header__menu" data-ar>
+            <a href="./Starter-file/dist/conseils.html">نصائح</a>
+            <a href="#">الرئيسية</a>
+            <a><button class="button1" data-ar> FRAN &nbsp;&nbsp;<i class="fas fa-globe"></i> </button></a>
+        </div> -->
+
+    <div class="header__text">
+        <h3 class="header__title">LA DERNIÈRE INFO MÉDICALE </h3>
+        <p class="header__parag">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur
+            d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. <br> N'arrêtez pas votre
+            traitement
+            !
+            Consultez
+            votre médecin ou votre pharmacien. </p>
+    </div>
+</header>
 
     <!-- -------------------------------------Comment se protéger------------------------------------------------- -->
     <section class="protéger">
@@ -264,7 +286,16 @@
 
     <!-- -------------------------------------------------------HEROFOOTER------------------------------------------ -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script>
+        $('.button1').click(function () {
+            var lang = $('html').attr('lang');
+            if (lang == 'fr') $('html').attr('lang', 'ar');
+            if (lang == 'ar') $('html').attr('lang', 'fr');
+
+        });
+    </script>
 
 </body>
 
