@@ -14,7 +14,6 @@ let btn_2 = document.querySelector("#Q2");
 let quest_2 = document.querySelector("#question_2");
 
 
-
 back = document.querySelector("#retur");
 
 btn_2.addEventListener("click", function () {
