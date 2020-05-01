@@ -231,53 +231,13 @@
 .questions {
   padding: 30px; }
   .questions .question_1 {
+    display: none;
     width: 60%;
     margin: auto;
     margin-top: 50px;
     padding-bottom: 1em;
     text-align: center;
     color: #1078ad; }
-  .questions input {
-    width: 20%;
-    height: 40px;
-    border: 2px solid #1078ad;
-    border-radius: 10px;
-    text-align: center;
-    font-size: x-large; }
-
-.radio_G {
-  width: 40%;
-  margin: auto; }
-  .radio_G .option {
-    position: relative; }
-    .radio_G .option input {
-      display: none; }
-    .radio_G .option label {
-      font-size: 20px;
-      cursor: pointer;
-      color: #1078ad;
-      margin-left: 20px; }
-  .radio_G .option label::after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    border: 4px solid #1078ad;
-    border-radius: 50%;
-    left: -22px;
-    top: 2px; }
-  .radio_G .option label::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: gold;
-    border-radius: 50%;
-    left: -14px;
-    top: 10.5px;
-    opacity: 0; }
-  .radio_G .option input:checked ~ label::before {
-    opacity: 1; }
 
 .consei {
   width: 50%;
@@ -302,6 +262,12 @@
     cursor: pointer; }
   .btns .return {
     opacity: 0; }
+
+.hide {
+  display: none; }
+
+.visible {
+  display: block; }
 
 .error {
   width: 40%;
@@ -622,32 +588,32 @@
     padding-top: 1em; }
   .test__emotic {
     max-width: 50px;
-    margin-left: 48%;
+    margin-left: 45%;
     padding-top: 1em; }
-  .test a {
-    margin: auto; }
-    .test a .test__btn {
-      background-color: #1078ad;
-      width: 30vw;
-      font-size: 22px;
-      font-weight: 700;
-      color: white;
-      border: 2px solid #1078ad;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 10px;
-      text-align: center;
-      margin-top: 1em;
-      cursor: pointer; }
+  .test__btn {
+    background-color: #1078ad;
+    width: 30vw;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid #1078ad;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 1em;
+    cursor: pointer; }
 
 @media screen and (max-width: 400px) {
   .test__title {
     font-size: 0.6em; }
   .test__emotic {
     max-width: 30px; }
-  .test a .test__btn {
+  .test__btn {
     width: 16em;
-    font-size: 1em; } }
+    font-size: 1em;
+    margin-left: 15%; } }
 
 .footer {
   text-align: center;

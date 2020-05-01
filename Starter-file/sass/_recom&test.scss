@@ -156,30 +156,26 @@
 
     &__emotic {
         max-width: 50px;
-        margin-left: 48%;
+        margin-left: 45%;
         padding-top: 1em;
 
     }
 
-    a {
-        margin: auto;
-        
-        .test__btn {
-            background-color: $color1;
-            width: 30vw;
-            font-size: 22px;
-            font-weight: 700;
-            color: white;
-            border: 2px solid $color1;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            text-align: center;
-            // margin-left: 32%;
-            margin-top: 1em;
-            cursor: pointer;
+    &__btn {
+        background-color: $color1;
+        width: 30vw;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        border: 2px solid $color1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 1em;
+        cursor: pointer;
 
-        }
     }
 }
 
@@ -192,12 +188,11 @@
         &__emotic {
             max-width: 30px;
         }
-        a{
-        .test__btn {
+
+        &__btn {
             width: 16em;
             font-size: 1em;
-            
+            margin-left: 15%;
         }
-    }
     }
 }
