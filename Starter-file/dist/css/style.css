@@ -157,11 +157,6 @@
       padding: 0.2em 0.6em;
       text-align: center; } }
 
-@-webkit-keyframes mymove {
-  0% { }
-  100% {
-    left: 260px; } }
-
 .line {
   padding-top: 2em;
   max-width: 60%;
@@ -179,12 +174,9 @@
   .line__smallcercle {
     width: 15px;
     height: 15px;
-    background-color: #96C5DC;
+    background-color: gold;
     border-radius: 50%;
     margin: 0 auto; }
-  .line .active {
-    background-color: gold;
-    position: relative; }
 
 .preamb {
   padding-top: 0.7em;
@@ -225,11 +217,33 @@
     margin-top: 2em;
     cursor: pointer; }
 
+.progressBar {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  display: none; }
+  .progressBar .prognum {
+    font-weight: 700;
+    color: #1078ad;
+    margin-bottom: -22px; }
+  .progressBar .bar {
+    width: 80%;
+    height: 1em;
+    border-radius: 1em;
+    background-color: #96c5dc;
+    margin: 0 auto; }
+    .progressBar .bar .progress {
+      background-color: #F4CF1B;
+      width: 0;
+      height: 100%;
+      border-radius: 1em; }
+
 #question_1 {
   display: none; }
 
 .questions {
-  padding: 30px; }
+  padding: 15px; }
   .questions .question_1 {
     display: none;
     width: 60%;

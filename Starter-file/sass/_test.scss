@@ -1,4 +1,3 @@
-@import 'animation.scss';
 
 .line {
     padding-top: 2em;
@@ -21,18 +20,14 @@
     &__smallcercle {
         width: 15px;
         height: 15px;
-        background-color: #96C5DC;
+        background-color: gold;
         border-radius: 50%;
         margin: 0 auto;
 
 
     }
 
-    .active {
-        background-color: gold;
-        position: relative;
 
-    }
 }
 
 .preamb {
@@ -89,6 +84,34 @@
 }
 
 
+.progressBar {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+
+    .prognum {
+        font-weight: 700;
+        color: $color1;
+        margin-bottom: -22px;
+    }
+
+    .bar {
+        width: 80%;
+        height: 1em;
+        border-radius: 1em;
+        background-color: #96c5dc;
+        margin: 0 auto;
+
+        .progress {
+            background-color: $goldColor;
+            width: 0;
+            height: 100%;
+            border-radius: 1em;
+        }
+    }
+}
 
 
 #question_1 {
@@ -98,7 +121,7 @@
 .questions {
 
 
-    padding: 30px;
+    padding: 15px;
 
 
     .question_1 {
@@ -169,13 +192,6 @@
 
 //     }
 // }
-
-
-
-
-
-
-
 
 
 
