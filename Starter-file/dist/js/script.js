@@ -269,6 +269,9 @@ suivant.addEventListener('click', () => {
         if (details.value === "") {
             alert("Enter valid number")
             return;
+        } else if (details.value < 36 || details.value > 41) {
+            alert('Entrer votre temperature');
+            return;
         } else {
             arr2.push(details.value);
             console.log(details.value);
@@ -277,8 +280,16 @@ suivant.addEventListener('click', () => {
 
     } else if (questionsList[counter - 1].type === 1) {
         var valeur = document.querySelector('input[name=choice]:checked').value;
-        arr2.push(valeur);
-        counter += 1;
+        if (valeur === 'non' && counter === 1) {
+            arr2.push(valeur);
+            arr2.push('37');
+            counter += 2;
+        } else {
+            arr2.push(valeur);
+            counter += 1;
+        }
+        // arr2.push(valeur);
+        // counter += 1;
     };
     console.log(arr2);
 
@@ -294,11 +305,18 @@ suivant.addEventListener('click', () => {
 });
 
 precedente.addEventListener('click', () => {
-    counter -= 1;
-
     if (counter <= 1) {
         precedente.style.display = "none";
     }
+    
+    if (counter === 3 && arr2[0] === 'non') {
+        counter -= 1;
+        arr2.pop();
+        precedente.style.display = "none";
+    }
+   
+    counter -= 1;
+
     arr2.pop();
     console.log(arr2)
     changeTextQuest(counter);
