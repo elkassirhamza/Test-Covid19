@@ -139,27 +139,6 @@
 
 }
 
-.radioflex {
-    margin-top: 1em;
-}
-
-
-.fourchoices {
-    display: flex;
-    justify-content: space-evenly;
-
-    .choices {
-        display: flex;
-        width: 250px;
-        justify-content: flex-end;
-        align-items: center;
-
-        input {
-            margin: 1em 20%;
-        }
-    }
-
-}
 
 .radio_1 {
     width: 50%;
@@ -262,4 +241,51 @@
 
 .visible {
     display: block;
+}
+
+
+
+
+.radioflex {
+    margin-top: 1em;
+}
+
+
+.fourchoices {
+    display: flex;
+    justify-content: space-evenly;
+
+    .choices {
+        display: flex;
+        width: 250px;
+        justify-content: flex-end;
+        align-items: center;
+
+        input {
+            margin: 1em 20%;
+        }
+    }
+
+}
+
+.btnRestart {
+    background: url("../../../Design/Assets/png/btn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15em;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 1em;
+    cursor: pointer
+}
+
+.afficheResult {
+    h3 {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+        color: $btn_color;
+    }
 }
