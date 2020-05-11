@@ -410,14 +410,14 @@ let nombPronos = 0;
 let nombMin = 0;
 let nombMaj = 0;
 
-let age = arr2[11];
+// let age = arr2[11];
 //syptome//
 
-let fievre = arr2[0] === 'oui';
-let toux = arr2[2] === 'oui';
-let courbatures = arr2[3] === 'oui';
-let malGorge = arr2[4] === 'oui';
-let diarrhee = arr2[5] === 'oui';
+// let fievre = arr2[0] == 'oui';
+// let toux = arr2[2] == 'oui';
+// let courbatures = arr2[3] == 'oui';
+// let malGorge = arr2[4] == 'oui';
+// let diarrhee = arr2[5] == 'oui';
 
 triereponces = () => {
     for (let i = 0; i < arr2.length; i++) {
@@ -452,18 +452,20 @@ triereponces = () => {
 }
 
 function showResult() {
+    if (arr2[0] === 'oui' || (arr2[2] == 'oui' && arr2[4] == 'oui') || (arr2[2] == 'oui' && arr2[3] == 'oui')) {
 
-
-    if ((nombMaj >= 1) && (nombPronos >= 1) && (nombMin >= 2)) {
-        textResult.firstElementChild.textContent = 'veuillez appeler le numéro 141';
-    } else if ((nombPronos >= 1) && (nombMaj == 0) && (nombMin <= 1)) {
-        textResult.firstElementChild.textContent = 'téléconsultation ou médecin généraliste ou visite à domicile1';
-    } else if ((nombPronos == 0) && (nombMaj == 0) && (nombMin == 0) && arr2[11] > 50) {
-        textResult.firstElementChild.textContent = 'téléconsultation ou médecin généraliste ou visite à domicile2';
-    } else if ((arr2[11] <= 50) && (nombMin >= 1)) {
-        textResult.firstElementChild.textContent = 'nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes';
-    } else {
+        if ((nombMaj >= 1) || ((nombPronos >= 1) && (nombMin >= 2))) {
+            textResult.firstElementChild.textContent = 'veuillez appeler le numéro 141';
+        } else if (((nombPronos >= 1) && (nombMaj == 0)) || (nombMin == 1)) {
+            textResult.firstElementChild.textContent = 'téléconsultation ou médecin généraliste ou visite à domicile1';
+        } else if ((nombPronos == 0) && (nombMaj == 0) && (nombMin == 0) && arr2[11] > 50) {
+            textResult.firstElementChild.textContent = 'téléconsultation ou médecin généraliste ou visite à domicile2';
+        } else if ((nombPronos == 0) && (nombMaj == 0) && (nombMin == 0) && arr2[11] < 50) {
+            textResult.firstElementChild.textContent = 'nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes.';
+        } else if ((arr2[11] <= 50) && (nombMin >= 1)) {
+            textResult.firstElementChild.textContent = 'nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes';
+        } 
+    }else {
         textResult.firstElementChild.textContent = 'Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la   situation.   Pour   toute information concernant   le   Covid-19 allez vers la page d’accueil.';
     }
-
 }
